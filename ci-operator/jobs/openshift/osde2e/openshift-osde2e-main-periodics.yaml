@@ -19,7 +19,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -55,7 +55,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-addon-integreatly-operator
   spec:
     containers:
@@ -66,7 +66,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: ADDON_IDS
         value: rhmi
@@ -106,7 +106,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-addon-prow-operator
   spec:
     containers:
@@ -117,7 +117,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: ADDON_IDS
         value: prow-operator
@@ -153,7 +153,7 @@ periodics:
   cron: 0 */4 * * *
   decorate: true
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-e2e-osd-default-nightly
   spec:
     containers:
@@ -164,7 +164,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -200,7 +200,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-e2e-upgrade-to-osd-default-nightly
   spec:
     containers:
@@ -211,7 +211,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -247,7 +247,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-e2e-osd-default-plus-one-nightly
   spec:
     containers:
@@ -258,7 +258,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -294,7 +294,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-e2e-upgrade-to-osd-default-plus-one-nightly
   spec:
     containers:
@@ -305,7 +305,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -341,7 +341,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-e2e-osd-default-plus-two-nightly
   spec:
     containers:
@@ -352,7 +352,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -388,7 +388,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-aws-scale-osd-default-nightly
   spec:
     containers:
@@ -399,7 +399,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -446,7 +446,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -482,7 +482,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-informing-default
   spec:
     containers:
@@ -493,7 +493,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -529,7 +529,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-informing-default
   spec:
     containers:
@@ -540,7 +540,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -576,7 +576,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-default-next
   spec:
     containers:
@@ -587,7 +587,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -625,7 +625,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-prod-minus-one-to-next
   spec:
     containers:
@@ -636,7 +636,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -676,7 +676,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-prod-minus-two-to-next
   spec:
     containers:
@@ -687,7 +687,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -727,7 +727,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-prod-minus-three-to-next
   spec:
     containers:
@@ -738,7 +738,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -778,7 +778,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-prod-minus-four-to-next
   spec:
     containers:
@@ -789,7 +789,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -829,7 +829,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-upgrade-prod-plus-one-to-next
   spec:
     containers:
@@ -840,7 +840,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -880,7 +880,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-middle-imageset
   spec:
     containers:
@@ -891,7 +891,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -927,7 +927,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-next
   spec:
     containers:
@@ -938,7 +938,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -976,7 +976,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-informing-next
   spec:
     containers:
@@ -987,7 +987,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -1025,7 +1025,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-informing-next
   spec:
     containers:
@@ -1036,7 +1036,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -1074,7 +1074,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-e2e-oldest-imageset
   spec:
     containers:
@@ -1085,7 +1085,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1121,7 +1121,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-aws-scale-default
   spec:
     containers:
@@ -1132,7 +1132,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1168,7 +1168,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-default
   spec:
     containers:
@@ -1179,7 +1179,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1215,7 +1215,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-upgrade-default-next-z
   spec:
     containers:
@@ -1226,7 +1226,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -1266,7 +1266,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-upgrade-default-next
   spec:
     containers:
@@ -1277,7 +1277,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -1315,7 +1315,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-middle-imageset
   spec:
     containers:
@@ -1326,7 +1326,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1362,7 +1362,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-next
   spec:
     containers:
@@ -1373,7 +1373,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -1411,7 +1411,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-e2e-oldest-imageset
   spec:
     containers:
@@ -1422,7 +1422,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1458,7 +1458,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-scale-default
   spec:
     containers:
@@ -1469,7 +1469,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1505,7 +1505,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-conformance-default
   spec:
     containers:
@@ -1516,7 +1516,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1552,7 +1552,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-addon-codeready-operator
   spec:
     containers:
@@ -1563,7 +1563,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: ADDON_IDS
         value: codeready-workspaces
@@ -1603,7 +1603,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-aws-addon-codeready-qe-operator
   spec:
     containers:
@@ -1614,7 +1614,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: ADDON_IDS
         value: codeready-workspaces-qe
@@ -1654,7 +1654,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-e2e-osd-default-nightly
   spec:
     containers:
@@ -1665,7 +1665,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1701,7 +1701,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-e2e-upgrade-to-osd-default-nightly
   spec:
     containers:
@@ -1712,7 +1712,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1748,7 +1748,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-e2e-osd-default-plus-one-nightly
   spec:
     containers:
@@ -1759,7 +1759,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1795,7 +1795,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-e2e-upgrade-to-osd-default-plus-one-nightly
   spec:
     containers:
@@ -1806,7 +1806,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1842,7 +1842,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-e2e-osd-default-plus-two-nightly
   spec:
     containers:
@@ -1853,7 +1853,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1889,7 +1889,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-gcp-scale-osd-default-nightly
   spec:
     containers:
@@ -1900,7 +1900,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -1936,7 +1936,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-moa-prod-cleanup
   spec:
     containers:
@@ -1969,7 +1969,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-moa-stage-cleanup
   spec:
     containers:
@@ -2002,7 +2002,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-moa-int-cleanup
   spec:
     containers:
@@ -2035,7 +2035,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-moa-e2e-osd-default-nightly
   spec:
     containers:
@@ -2046,7 +2046,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: int
@@ -2090,7 +2090,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-moa-e2e-upgrade-to-osd-default-nightly
   spec:
     containers:
@@ -2101,7 +2101,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: int
@@ -2145,7 +2145,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-moa-e2e-osd-default-plus-one-nightly
   spec:
     containers:
@@ -2156,7 +2156,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: int
@@ -2200,7 +2200,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-moa-e2e-upgrade-to-osd-default-plus-one-nightly
   spec:
     containers:
@@ -2211,7 +2211,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: int
@@ -2255,7 +2255,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-int-moa-e2e-osd-default-plus-two-nightly
   spec:
     containers:
@@ -2266,7 +2266,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: int
@@ -2310,7 +2310,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-gcp-e2e-default
   spec:
     containers:
@@ -2321,7 +2321,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -2357,7 +2357,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-gcp-e2e-upgrade-default-next
   spec:
     containers:
@@ -2368,7 +2368,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -2406,7 +2406,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-gcp-e2e-next
   spec:
     containers:
@@ -2417,7 +2417,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -2455,7 +2455,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-gcp-scale-default
   spec:
     containers:
@@ -2466,7 +2466,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -2502,7 +2502,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-moa-e2e-default
   spec:
     containers:
@@ -2513,7 +2513,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: stage
@@ -2557,7 +2557,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-moa-e2e-upgrade-default-next
   spec:
     containers:
@@ -2568,7 +2568,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: stage
@@ -2614,7 +2614,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-stage-moa-e2e-next
   spec:
     containers:
@@ -2625,7 +2625,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: stage
@@ -2671,7 +2671,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-gcp-e2e-default
   spec:
     containers:
@@ -2682,7 +2682,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -2718,7 +2718,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-gcp-e2e-upgrade-default-next
   spec:
     containers:
@@ -2729,7 +2729,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: UPGRADE_TO_CIS_IF_POSSIBLE
         value: "true"
@@ -2767,7 +2767,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-gcp-e2e-next
   spec:
     containers:
@@ -2778,7 +2778,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: USE_LATEST_VERSION_FOR_INSTALL
         value: "true"
@@ -2816,7 +2816,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-gcp-scale-default
   spec:
     containers:
@@ -2827,7 +2827,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: SECRET_LOCATIONS
         value: /usr/local/osde2e-common,/usr/local/osde2e-credentials
@@ -2863,7 +2863,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-moa-e2e-default
   spec:
     containers:
@@ -2874,7 +2874,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: prod
@@ -2918,7 +2918,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-moa-e2e-upgrade-default-next
   spec:
     containers:
@@ -2929,7 +2929,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: prod
@@ -2975,7 +2975,7 @@ periodics:
     org: openshift
     repo: osde2e
   labels:
-    pj-rehearse.openshift.io/can-be-rehearsed: "true"
+    pj-rehearse.openshift.io/can-be-rehearsed: "false"
   name: osde2e-prod-moa-e2e-next
   spec:
     containers:
@@ -2986,7 +2986,7 @@ periodics:
       - --configs
       - $(CONFIGS)
       command:
-      - /osde2e
+      - osde2e
       env:
       - name: MOA_ENV
         value: prod
